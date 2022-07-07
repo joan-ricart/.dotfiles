@@ -15,6 +15,14 @@ return require('packer').startup(function()
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
 
+    -- Nvim-tree
+    use {
+        'kyazdani42/nvim-tree.lua',
+        requires = {
+            'kyazdani42/nvim-web-devicons', -- optional, for file icons
+        },
+    }
+
     -- Colorscheme
     use 'sainnhe/everforest'
 
