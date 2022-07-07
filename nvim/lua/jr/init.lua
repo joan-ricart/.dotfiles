@@ -9,5 +9,11 @@ require'nvim-treesitter.configs'.setup {
     }
 }
 
-vim.cmd('colorscheme everforest')
+require'lualine'.setup {
+    options = {
+        icons_enabled = false,
+        theme = 'everforest',
+    }
+}
 
+vim.cmd('colorscheme everforest')
