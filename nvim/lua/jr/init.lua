@@ -16,4 +16,6 @@ require'lualine'.setup {
     }
 }
 
+require'nvim-tree'.setup()
+
 vim.cmd('colorscheme everforest')
