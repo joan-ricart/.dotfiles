@@ -8,9 +8,14 @@ return require('packer').startup(function()
             {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'},
         }
     }
+    
+    -- Lualine
+    use {
+        'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
 
     -- Colorscheme
-    -- use 'ellisonleao/gruvbox.nvim'
     use 'sainnhe/everforest'
 
     -- Dashboard
